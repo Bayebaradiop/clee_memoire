@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 228 32% 21%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 228 32% 21%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 228 32% 21%;
+
+    --primary: 234 32% 21%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 234 32% 21%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 199 84% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --warning: 43 100% 49%;
+    --warning-foreground: 234 32% 21%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 199 84% 60%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 234 32% 21%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 43 100% 49%;
+    --sidebar-primary-foreground: 234 32% 21%;
+    --sidebar-accent: 234 28% 28%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 234 28% 28%;
+    --sidebar-ring: 199 84% 60%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 228 32% 10%;
+    --foreground: 0 0% 95%;
+
+    --card: 228 32% 14%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 228 32% 14%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 43 100% 49%;
+    --primary-foreground: 234 32% 21%;
+
+    --secondary: 234 28% 28%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 234 28% 28%;
+    --muted-foreground: 215 16% 65%;
+
+    --accent: 199 84% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --warning: 43 100% 49%;
+    --warning-foreground: 234 32% 21%;
+
+    --destructive: 0 62% 31%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 234 28% 28%;
+    --input: 234 28% 28%;
+    --ring: 199 84% 60%;
+
+    --sidebar-background: 228 32% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 43 100% 49%;
+    --sidebar-primary-foreground: 234 32% 21%;
+    --sidebar-accent: 234 28% 18%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 234 28% 18%;
+    --sidebar-ring: 199 84% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-raleway;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins;
+  }
+}
